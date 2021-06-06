@@ -11,10 +11,15 @@ A simple test example is investigated here:
 
 The Codes are structured as follows:
 * detailed_solution
+
     --> This folder consists of source code to calculate the detailed solution
+    
 * 1D_REDIM
+    
     --> This folder consists of source code to generate 1D REDIM reduced chemistry and the sensitivity with respect to gradient estimate
+    
 * 2D_REDIM
+    
     --> This folder consists of source code to generate 2D REDIM reduced chemistry and the sensitivity with respect to gradient estimate
 
 More explanation can be found in the corresponding sub-folders
