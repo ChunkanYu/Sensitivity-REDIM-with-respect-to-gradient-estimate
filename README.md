@@ -5,3 +5,5 @@ A simple test example is investigated here:
 
 <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial \psi_1}{\partial t}=-k_1 \psi_1 + d \cdot \frac{\partial^2 \psi_1}{\partial x^2}">
 
+ |/ab  |/ab  |/ab 
+
