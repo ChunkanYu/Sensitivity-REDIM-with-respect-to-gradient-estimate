@@ -1,4 +1,7 @@
 clear all;clc; 
+% This is the main code to generate the sensitivity of 1D REDIM with respect to gradient estimate.
+% Several input options are needed, which will be required by GUI-Window
+% The default values are consistent to the case studied in the paper
 
 % user specified system parameter
 prompt = {'Enter the diffusion coefficient d:',...
