@@ -3,7 +3,7 @@ This folder contains the source code to calculate the detailed solutions.
 The program can be run with starting "main.m".
 
 Several inputs for system are needed:
-* enter the diffusion coefficient <img src="https://render.githubusercontent.com/render/math?math=d">
+* enter the diffusion coefficient <img src="https://render.githubusercontent.com/render/math?math=D">
 * enter the rate coefficient for <img src="https://render.githubusercontent.com/render/math?math=k_1">
 * enter the rate coefficient for <img src="https://render.githubusercontent.com/render/math?math=k_2">
 * enter the rate coefficient for <img src="https://render.githubusercontent.com/render/math?math=k_3">
