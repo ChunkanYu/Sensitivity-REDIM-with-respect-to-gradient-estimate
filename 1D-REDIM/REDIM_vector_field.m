@@ -9,9 +9,7 @@ PSI=y;
    for i=1:npsi
       PSI_matrix(:,i)=PSI((i-1)*ng_redim+1: i*ng_redim);
    end
-
-   chi = chi0 * gradient(gtheta,PSI_matrix(:,1));
-
+   
 for i=1:npsi
     dpsidtheta_matrix(:,i) = gradient(PSI_matrix(:,i),gtheta);
     d2psidtheta2_matrix(:,i) = gradient(dpsidtheta_matrix(:,i),gtheta);
@@ -19,6 +17,16 @@ end
 
 
 C=zeros(1,npsi); C(1,1)=1;
+
+
+for i=1:ng
+    dpsidtheta_now=[dpsidtheta_matrix(i,1);
+                    dpsidtheta_matrix(i,2);
+                    dpsidtheta_matrix(i,3)];
+   chi(i)=inv(C*dpsidtheta_now)*C*[chi0;chi0;chi0]; 
+end
+
+
 
 for i=1:ng
     for j=1:npsi
