@@ -23,7 +23,7 @@ for i=1:ng
     dpsidtheta_now=[dpsidtheta_matrix(i,1);
                     dpsidtheta_matrix(i,2);
                     dpsidtheta_matrix(i,3)];
-   chi(i)=inv(C*dpsidtheta_now)*C*[chi0;chi0;chi0]; 
+   chi(i)=inv(C*dpsidtheta_now)*C*[chi0;0;0]; 
 end
 
 
