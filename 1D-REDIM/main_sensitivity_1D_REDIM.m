@@ -29,13 +29,13 @@ ng =str2num(system_parameter{1});
 chi0=str2num(system_parameter{2});
 
 
-fprintf('now the 1D REDIM will be generated, please wait ...');
+fprintf('now the 1D REDIM will be generated, please wait ... \n');
 [REDIM_1D]=REDIM_1D_generation(D,k,ng,chi0);
-fprintf('!!! now the 1D REDIM has been successfully generated!!!');
+fprintf('!!! now the 1D REDIM has been successfully generated!!! \n');
 
-fprintf('now the corresponding sensitivity analysis will be performed, please wait');
+fprintf('now the corresponding sensitivity analysis will be performed, please wait ... \n');
 [sensitivity_vector,Term]=REDIM_1D_sensitivity(REDIM_1D,D,k,chi0);
-fprintf('!!! the sensitivity analysis is finished. Results will be plotted soon!!!');
+fprintf('!!! the sensitivity analysis is finished. Results will be plotted soon!!! \n');
 
 state=REDIM_1D(ng+1:end);
 state_psi1=state(1:ng);
