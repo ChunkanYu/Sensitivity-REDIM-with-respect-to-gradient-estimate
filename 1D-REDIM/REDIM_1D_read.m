@@ -17,7 +17,9 @@ REDIM_1D_info.dpsidtheta=dpsidtheta;
 REDIM_1D_info.d2psidtheta2=d2psidtheta2;
 
 for i=1:ng_redim
-    dpsidtheta_perp(:,:,i)=gram_schmidt(dpsidtheta(:,i));
+    a=dpsidtheta(1,i); b=dpsidtheta(2,i); c=dpsidtheta(3,i); 
+    v1=[-b/a;1;0]; dpsidtheta_perp(:,1,i)=v1/norm(v1);
+    v2=[-c/a;0;1]; dpsidtheta_perp(:,2,i)=v2/norm(v2);
 end
 REDIM_1D_info.dpsidtheta_perp=dpsidtheta_perp;
 
