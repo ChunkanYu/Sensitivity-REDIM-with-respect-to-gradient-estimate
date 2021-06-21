@@ -18,7 +18,7 @@ I=eye(ng_redim);
 % A(theta)
 for i=1:ng_redim
     A_xx=inv(REDIM_1D_info.dpsidtheta_perp(:,:,i)'*C_perp)*REDIM_1D_info.dpsidtheta_perp(:,:,i)';
-    A_theta(:,:,i)=A_xx*REDIM_1D_info.dGdpsi(:,:,i)*C_perp;
+    A_theta(:,:,i)=A_xx*REDIM_1D_info.dGdpsi*C_perp;
     clear A_xx;
 end
 
