@@ -29,11 +29,7 @@ end
 REDIM_1D_info.G=G;
 
 
-dGdpsi_xxx=[-k(1) 0 0;k(1) -k(2) 0; 0 k(2) -k(3)];
-
-for i=1:ng_redim
-    dGdpsi(:,:,i)=dGdpsi_xxx;
-end
+dGdpsi=[-k(1) 0 0;k(1) -k(2) 0; 0 k(2) -k(3)];
 
 REDIM_1D_info.dGdpsi=dGdpsi;
 
