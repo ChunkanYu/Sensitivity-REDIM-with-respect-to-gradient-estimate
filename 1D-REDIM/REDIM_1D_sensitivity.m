@@ -25,7 +25,7 @@ end
 % B(theta)
 for i=1:ng_redim
     B_xx = inv(C'*REDIM_1D_info.dpsidtheta(:,i))*C'; 
-    B_theta(i,1)=B_xx * (REDIM_1D_info.G(:,i)+D*chi(i)*chi(i)*REDIM_1D_info.d2psidtheta2(:,i));
+    B_theta(i,1)=-B_xx * (REDIM_1D_info.G(:,i)+D*chi(i)*chi(i)*REDIM_1D_info.d2psidtheta2(:,i));
     clear B_xx;
 end
 
